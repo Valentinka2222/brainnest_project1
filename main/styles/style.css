@@ -1,0 +1,335 @@
+.aqua {
+  color: #12dfd5;
+}
+
+.green {
+  color: #064906;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: purple;
+}
+
+a:active {
+  border-bottom: 5px solid #334155;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  padding-right: 50px;
+  font-family: 'Playfair Display', sans-serif;
+  background-color: #f4f4f5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(207, 201, 231, 0.8), rgba(200, 181, 181, 0.8)), url(../images/sea.jpg);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  font-size: 25px;
+}
+
+.navbar__link {
+  width: 150px;
+  line-height: 50px;
+  border: none;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+  padding: 16px;
+  margin: 50px auto 50px 0;
+  text-align: center;
+  border: 2px solid #71717a;
+  border-radius: 10px;
+  font-size: 25px;
+  color: #1e293b;
+  background-color: #d1d5db;
+  box-shadow: -5px -1px 73px 8px #a1a1aa;
+}
+
+.article__title__quote {
+  color: #115e59;
+}
+
+.article__description {
+  font-weight: 400;
+}
+
+.logo {
+  flex-basis: 85%;
+}
+
+.hexagon {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  transform: rotate(120deg);
+  cursor: pointer;
+}
+
+.hexagon-in1 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-60deg);
+  overflow: hidden;
+}
+
+.hexagon-in2 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 9%;
+  opacity: 1;
+  animation: ani 5s forwards;
+  visibility: visible;
+  transform: rotate(-60deg);
+}
+
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hexagon2 {
+  width: 15em;
+  height: 20em;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+.row2 {
+  margin-left: 137px;
+  margin-top: -102px;
+}
+
+.social {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__logo {
+  font-size: 50px;
+  margin-left: 30px;
+  margin-bottom: 50px;
+}
+
+.violet {
+  color: #4c1d95;
+}
+
+.violet:active {
+  border: none;
+}
+
+.australia {
+  background-image: url(../pages/countries/australia/cradle_mountains/cradle_mountain.jpg);
+}
+
+.usa {
+  background-image: url(../pages/countries/usa/lake_tahoe/lake_tahoe.jpg);
+}
+
+.france {
+  background-image: url(../images/france_landscapes.jpg);
+}
+
+.canada {
+  background-image: url(../images/canada_landscapes.jpg);
+}
+
+.australia-flag {
+  background-image: url(../images/flag_australia_enl.jpg);
+}
+
+.usa-flag {
+  background-image: url(../images/flag_usa_enl.jpg);
+}
+
+.canada-flag {
+  background-image: url(../images/flag_canada_new.jpg);
+}
+
+.mexico-flag {
+  background-image: url(../images/flag_mexico_new.jpg);
+}
+
+.france-flag {
+  background-image: url(../images/flag_france_new.jpg);
+}
+
+.aqua {
+  color: #12dfd5;
+}
+
+.green {
+  color: #064906;
+}
+
+.australia {
+  background-image: url(../pages/countries/australia/cradle_mountains/cradle_mountain.jpg);
+}
+
+.usa {
+  background-image: url(../pages/countries/usa/lake_tahoe/lake_tahoe.jpg);
+}
+
+.france {
+  background-image: url(../images/france_landscapes.jpg);
+}
+
+.canada {
+  background-image: url(../images/canada_landscapes.jpg);
+}
+
+.australia-flag {
+  background-image: url(../images/flag_australia_enl.jpg);
+}
+
+.usa-flag {
+  background-image: url(../images/flag_usa_enl.jpg);
+}
+
+.canada-flag {
+  background-image: url(../images/flag_canada_new.jpg);
+}
+
+.mexico-flag {
+  background-image: url(../images/flag_mexico_new.jpg);
+}
+
+.france-flag {
+  background-image: url(../images/flag_france_new.jpg);
+}
+
+ul {
+  padding: 0;
+  font-family: 'Playfair Display', sans-serif;
+}
+
+figure {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3,
+li,
+ul {
+  margin: 0;
+}
+
+.countries {
+  display: flex;
+  background-image: linear-gradient(rgba(207, 201, 231, 0.8), rgba(200, 181, 181, 0.8));
+}
+
+.countries-list {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+
+.countries-list__item {
+  flex: 1 1 auto;
+  justify-content: center;
+  width: 150px;
+  margin-left: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.countries-list__item__name {
+  height: 150px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 25px;
+  font-size: 25px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.countries-list__item__name_nav {
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.countries-list__item__name_nav:hover {
+  color: #6363f5;
+}
+
+.countries-list__item__name_icon {
+  display: block;
+  max-width: 14rem;
+  height: 100px;
+  margin: auto;
+}
+
+.countries-list__item__place-list {
+  display: flex;
+  flex-direction: column;
+  padding: 17px;
+  list-style-type: none;
+}
+
+.countries-list__item__place-list_item {
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+}
+
+.countries-list__item__place-list_item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.countries-list__item__place-list_item:hover .card-image {
+  opacity: 1;
+}
+
+.countries-list__item__place-list_item img {
+  height: 100px;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0.91;
+}

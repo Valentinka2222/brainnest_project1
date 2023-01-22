@@ -9,7 +9,7 @@ h1:hover {
 .place {
   font-family: 'Source Serif Pro', serif;
   display: flex;
-  font-size: 1.5em;
+
   flex-direction: column;
   text-align: center;
   &__title {
@@ -30,6 +30,7 @@ h1:hover {
     margin: auto;
     padding-top: 20px;
     padding-bottom: 50px;
+    font-size: 1.5em;
   }
 }
 .image {

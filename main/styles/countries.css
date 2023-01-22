@@ -1,0 +1,35 @@
+.australia {
+  background-image: url(../pages/countries/australia/cradle_mountains/cradle_mountain.jpg);
+}
+
+.usa {
+  background-image: url(../pages/countries/usa/lake_tahoe/lake_tahoe.jpg);
+}
+
+.france {
+  background-image: url(../images/france_landscapes.jpg);
+}
+
+.canada {
+  background-image: url(../images/canada_landscapes.jpg);
+}
+
+.australia-flag {
+  background-image: url(../images/flag_australia_enl.jpg);
+}
+
+.usa-flag {
+  background-image: url(../images/flag_usa_enl.jpg);
+}
+
+.canada-flag {
+  background-image: url(../images/flag_canada_new.jpg);
+}
+
+.mexico-flag {
+  background-image: url(../images/flag_mexico_new.jpg);
+}
+
+.france-flag {
+  background-image: url(../images/flag_france_new.jpg);
+}

@@ -1,4 +1,4 @@
-@import './color.scss';
+@import './colors.scss';
 
 * {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ a {
       rgba(207, 201, 231, 0.8),
       rgba(200, 181, 181, 0.8)
     ),
-    url(./images/sea.jpg);
+    url(../images/sea.jpg);
 }
 
 .navbar {
@@ -139,6 +139,6 @@ a {
     border: none;
   }
 }
-@import './contries.scss';
+@import './countries.scss';
 
-@import './pages/countries-list.scss';
+@import './countries-list.scss';

@@ -9,29 +9,33 @@ h1:hover {
 }
 
 .place {
-  font-family: "Source Serif Pro", serif;
+  font-family: 'Source Serif Pro', serif;
   display: flex;
-  font-size: 1.5em;
   flex-direction: column;
   text-align: center;
 }
+
 .place__title {
   margin-top: 35px;
   animation: falls 1s ease 0.3s;
 }
+
 .place__description {
   margin-bottom: 20px;
 }
+
 .place__image {
   margin: auto;
   width: 80%;
 }
+
 .place__info {
   display: block;
   width: 80%;
   margin: auto;
   padding-top: 20px;
   padding-bottom: 50px;
+  font-size: 1.5em;
 }
 
 .image {
@@ -52,5 +56,3 @@ h1:hover {
     top: 100px;
   }
 }
-
-/*# sourceMappingURL=places.css.map */
