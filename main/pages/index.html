@@ -5,223 +5,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Favorite places</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="countries-list.css" />
   </head>
   <body>
-    <ul class="countries-list">
-      <!--Australia-->
-      <li class="countries-list__item">
-        <h3 class="countries-list__item__name">
-          <a
-            class="link countries-list__item__name_nav"
-            href="https://en.wikipedia.org/wiki/Australia"
-          >
-            Australia
-          </a>
-          <img
-            class="countries-list__item__name_icon"
-            width="25px"
-            src="../images/flag_australia_enl.jpg"
-            alt="Flag of Australia"
-          />
-        </h3>
-        <ul class="countries-list__item__place-list">
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/australia/sydney_harbour/sydney_harbour.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Sydney Harbour
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/australia/uluru/uluru.html"
-          >
-            <li class="countries-list__item__place-list_item">Uluru</li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/australia/cradle_mountains/cradle_mountain.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Cradle Mountain
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/australia/daitnree_rainforest/daintree_rainforest.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Daintree Rainforest
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/australia/great_barrier/great_barrier_reef.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Great Barrier Reef
-            </li>
-          </a>
-        </ul>
-      </li>
-      <!--Mexico-->
-      <li class="countries-list__item">
-        <h3 class="countries-list__item__name">
-          <a
-            class="link countries-list__item__name_nav"
-            href="https://en.wikipedia.org/wiki/Mexico"
-          >
-            Mexico
-          </a>
-          <img
-            class="countries-list__item__name_icon"
-            width="25px"
-            src="../images/flag_mexico_new.jpg"
-            alt="Flag of Mexico"
-          />
-        </h3>
-        <ul class="countries-list__item__place-list">
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/mexico/mexico_city/mexico_city.html"
-          >
-            <li class="countries-list__item__place-list_item">Mexico City</li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/mexico/puerto_balandra/puerto_balandra.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Puerto Balandra, Baja California Sur
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/mexico/el_arco_de_cabo/el_arco_de_cabo_san_lucas.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              El Arco de Cabo San Lucas or Lands End, Baja California
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/mexico/cenote/cenote.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Cenote, Chichén Itzá
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/mexico/el_castillo/el_castillo.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              El Castillo, Chichen Itza, Yucatán
-            </li>
-          </a>
-        </ul>
-      </li>
-      <!--The United States of America-->
-      <li class="countries-list__item">
-        <h3 class="countries-list__item__name">
-          <a
-            class="link countries-list__item__name_nav"
-            href="https://en.wikipedia.org/wiki/United_States"
-          >
-            The United States of America</a
-          >
-          <img
-            class="countries-list__item__name_icon"
-            width="25px"
-            src="../images/flag_usa_enl.jpg"
-            alt="Flag of USA"
-          />
-        </h3>
-        <ul class="countries-list__item__place-list">
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/usa/antelope_canyon/antelope_canyon.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Antelope Canyon
-            </li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/usa/savannah/savannah.html"
-          >
-            <li class="countries-list__item__place-list_item">Savannah</li></a
-          >
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/usa/lake_tahoe/lake_tahoe.html"
-          >
-            <li class="countries-list__item__place-list_item">Lake Tahoe</li>
-          </a>
-        </ul>
-      </li>
-      <!--Canada-->
-      <li class="countries-list__item">
-        <h3 class="countries-list__item__name">
-          <a
-            class="link countries-list__item__name_nav"
-            class="countries-list__item__name_nav"
-            href="https://en.wikipedia.org/wiki/Canada"
-          >
-            Canada
-          </a>
-          <img
-            class="countries-list__item__name_icon"
-            width="25px"
-            src="../images/flag_canada_new.jpg"
-            alt="Flag of Canada"
-          />
-        </h3>
-        <ul class="countries-list__item__place-list">
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/canada/abraham_lake/abraham_lake.html"
-          >
-            <li class="countries-list__item__place-list_item">Abraham Lake</li>
-          </a>
-          <a
-            class="link countries-list__item__place-list_nav"
-            href="./countries/canada/dempster/dempster_highway.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Dempster Highway
-            </li>
-          </a>
-        </ul>
-      </li>
-      <!--France-->
-      <li class="countries-list__item">
-        <h3 class="countries-list__item__name">
-          <a
-            class="link countries-list__item__name_nav"
-            href="https://en.wikipedia.org/wiki/France"
-          >
-            France
-          </a>
-          <img
-            class="countries-list__item__name_icon"
-            width="25px"
-            src="../images/flag_france_new.jpg"
-            alt="Flag of France"
-          />
-        </h3>
-        <ul class="countries-list__item__place-list">
-          <a
-            class="link countries-list__item__name_nav"
-            href="./countries/france/provence/provence.html"
-          >
-            <li class="countries-list__item__place-list_item">
-              Provence: land of lavender
-            </li>
-          </a>
-        </ul>
-      </li>
-    </ul>
+    <div class="countries">
+      <ul class="countries-list">
+        <!--Australia-->
+        <li class="countries-list__item">
+          <h3 class="countries-list__item__name australia-flag">
+            <a
+              class="countries-list__item__name_nav aqua"
+              href="https://en.wikipedia.org/wiki/Australia"
+            >
+              Australia
+            </a>
+          </h3>
+
+          <ul class="countries-list__item__place-list">
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/australia/sydney_harbour/sydney_harbour.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/australia/sydney_harbour/sydney-harbour-opera-house-and-bridge-australia.jpg"
+                    alt=" Sydney Harbour"
+                  />
+                  <figcaption>Sydney Harbour</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/australia/uluru/uluru.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/australia/uluru/uluru.jpg"
+                    alt=" Uluru"
+                  />
+                  <figcaption>Uluru</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/australia/cradle_mountains/cradle_mountain.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/australia/cradle_mountains/cradle_mountain.jpg"
+                    alt="Cradle Mountain"
+                  />
+                  <figcaption>Cradle Mountain</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/australia/daitnree_rainforest/daintree_rainforest.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/australia/daitnree_rainforest/daintree_rainforest.jpg"
+                    alt="Daintree Rainforest"
+                  />
+                  <figcaption>Daintree Rainforest</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/australia/great_barrier/great_barrier_reef.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/australia/daitnree_rainforest/daintree_rainforest.jpg"
+                    alt="Great Barrier Reef"
+                  />
+                  <figcaption>Great Barrier Reef</figcaption>
+                </figure>
+              </li>
+            </a>
+          </ul>
+        </li>
+        <!--Mexico-->
+        <li class="countries-list__item">
+          <h3 class="countries-list__item__name mexico-flag">
+            <a
+              class="countries-list__item__name_nav green"
+              href="https://en.wikipedia.org/wiki/Mexico"
+            >
+              Mexico
+            </a>
+          </h3>
+
+          <ul class="countries-list__item__place-list">
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/mexico/mexico_city/mexico_city.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/mexico/mexico_city/mexico.jpg"
+                    alt="Mexico City"
+                  />
+                  <figcaption>Mexico City</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/mexico/puerto_balandra/puerto_balandra.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/mexico/puerto_balandra/puerto_balandra.jpg"
+                    alt="Puerto Balandra, Baja California Sur"
+                  />
+                  <figcaption>Puerto Balandra, Baja California Sur</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/mexico/el_arco_de_cabo/el_arco_de_cabo_san_lucas.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/mexico/el_arco_de_cabo/el-arco-de-cabo-san-lucas.jpg"
+                    alt="El Arco de Cabo San Lucas or Lands End, Baja California"
+                  />
+                  <figcaption>
+                    El Arco de Cabo San Lucas or Lands End, Baja California
+                  </figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/mexico/cenote/cenote.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/mexico/cenote/cenote.jpg"
+                    alt="Cenote, Chichén Itzá"
+                  />
+                  <figcaption>Cenote, Chichén Itzá</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/mexico/el_castillo/el_castillo.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/mexico/el_castillo/el-castillo.jpg"
+                    alt="El Castillo, Chichen Itza, Yucatán"
+                  />
+                  <figcaption>El Castillo, Chichen Itza, Yucatán</figcaption>
+                </figure>
+              </li>
+            </a>
+          </ul>
+        </li>
+        <!--The United States of America-->
+        <li class="countries-list__item">
+          <h3 class="countries-list__item__name usa-flag">
+            <a
+              class="countries-list__item__name_nav aqua"
+              href="https://en.wikipedia.org/wiki/United_States"
+            >
+              The United States of America</a
+            >
+          </h3>
+
+          <ul class="countries-list__item__place-list">
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/usa/antelope_canyon/antelope_canyon.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/usa/antelope_canyon/antelope_canyon.jpg"
+                    alt="Antelope Canyon"
+                  />
+                  <figcaption>Antelope Canyon</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/usa/savannah/savannah.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/usa/savannah/savannah.jpg"
+                    alt="Savannah"
+                  />
+                  <figcaption>Savannah</figcaption>
+                </figure>
+              </li></a
+            >
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/usa/lake_tahoe/lake_tahoe.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/usa/lake_tahoe/lake_tahoe.jpg"
+                    alt="Lake Tahoe"
+                  />
+                  <figcaption>Lake Tahoe</figcaption>
+                </figure>
+              </li>
+            </a>
+          </ul>
+        </li>
+        <!--Canada-->
+        <li class="countries-list__item">
+          <h3 class="countries-list__item__name canada-flag">
+            <a
+              class="countries-list__item__name_nav green"
+              class="countries-list__item__name_nav"
+              href="https://en.wikipedia.org/wiki/Canada"
+            >
+              Canada
+            </a>
+          </h3>
+
+          <ul class="countries-list__item__place-list">
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/canada/abraham_lake/abraham_lake.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/canada/abraham_lake/abraham_lake.jpg"
+                    alt="Abraham Lake"
+                  />
+                  <figcaption>Abraham Lake</figcaption>
+                </figure>
+              </li>
+            </a>
+            <a
+              class="countries-list__item__place-list_nav"
+              href="./countries/canada/dempster/dempster_highway.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/canada/dempster/dempster_highway.jpg"
+                    alt="Dempster Highway"
+                  />
+                  <figcaption>Dempster Highway</figcaption>
+                </figure>
+              </li>
+            </a>
+          </ul>
+        </li>
+        <!--France-->
+        <li class="countries-list__item">
+          <h3 class="countries-list__item__name france-flag">
+            <a
+              class="countries-list__item__name_nav green"
+              href="https://en.wikipedia.org/wiki/France"
+            >
+              France
+            </a>
+          </h3>
+
+          <ul class="countries-list__item__place-list">
+            <a
+              class="countries-list__item__name_nav"
+              href="./countries/france/provence/provence.html"
+            >
+              <li class="countries-list__item__place-list_item">
+                <figure>
+                  <img
+                    src="./countries/france/provence/provence.jpg"
+                    alt="Provence: land of lavender"
+                  />
+                  <figcaption>Provence: land of lavender</figcaption>
+                </figure>
+              </li>
+            </a>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
