@@ -1,3 +1,47 @@
+.aqua {
+  color: #12dfd5;
+}
+
+.green {
+  color: #064906;
+}
+
+.australia {
+  background-image: url(./pages/countries/australia/cradle_mountains/cradle_mountain.jpg);
+}
+
+.usa {
+  background-image: url(./pages/countries/usa/lake_tahoe/lake_tahoe.jpg);
+}
+
+.france {
+  background-image: url(./images/france_landscapes.jpg);
+}
+
+.canada {
+  background-image: url(./images/canada_landscapes.jpg);
+}
+
+.australia-flag {
+  background-image: url(./images/flag_australia_enl.jpg);
+}
+
+.usa-flag {
+  background-image: url(./images/flag_usa_enl.jpg);
+}
+
+.canada-flag {
+  background-image: url(./images/flag_canada_new.jpg);
+}
+
+.mexico-flag {
+  background-image: url(./images/flag_mexico_new.jpg);
+}
+
+.france-flag {
+  background-image: url(./images/flag_france_new.jpg);
+}
+
 ul {
   padding: 0;
   font-family: 'Playfair Display', sans-serif;
@@ -9,6 +53,12 @@ figure {
 
 a {
   text-decoration: none;
+}
+
+h3,
+li,
+ul {
+  margin: 0;
 }
 
 .countries {
@@ -27,7 +77,6 @@ a {
   flex: 1 1 auto;
   justify-content: center;
   width: 150px;
-  margin: 0;
   margin-left: 10px;
   border-radius: 20px;
   overflow: hidden;
@@ -35,8 +84,8 @@ a {
 
 .countries-list__item__name {
   height: 150px;
-  margin: 0;
   text-align: center;
+  margin-top: 20px;
   line-height: 25px;
   font-size: 25px;
   border-radius: 20px;
@@ -65,7 +114,6 @@ a {
 .countries-list__item__place-list {
   display: flex;
   flex-direction: column;
-  margin: 0;
   padding: 17px;
   list-style-type: none;
 }
@@ -101,48 +149,4 @@ a {
   background-repeat: no-repeat;
   border-radius: 6px 6px 0px 0px;
   opacity: 0.91;
-}
-
-.australia {
-  background-image: url(./pages/countries/australia/cradle_mountains/cradle_mountain.jpg);
-}
-
-.usa {
-  background-image: url(./pages/countries/usa/lake_tahoe/lake_tahoe.jpg);
-}
-
-.france {
-  background-image: url(./images/france_landscapes.jpg);
-}
-
-.canada {
-  background-image: url(./images/canada_landscapes.jpg);
-}
-
-.australia-flag {
-  background-image: url(../images/flag_australia_enl.jpg);
-}
-
-.usa-flag {
-  background-image: url(../images/flag_usa_enl.jpg);
-}
-
-.canada-flag {
-  background-image: url(../images/flag_canada_new.jpg);
-}
-
-.mexico-flag {
-  background-image: url(../images/flag_mexico_new.jpg);
-}
-
-.france-flag {
-  background-image: url(../images/flag_france_new.jpg);
-}
-
-.aqua {
-  color: #12dfd5;
-}
-
-.green {
-  color: #064906;
 }

@@ -15,21 +15,21 @@
 }
 
 .australia-flag {
-  background-image: url(../images/flag_australia_enl.jpg);
+  background-image: url(./images/flag_australia_enl.jpg);
 }
 
 .usa-flag {
-  background-image: url(../images/flag_usa_enl.jpg);
+  background-image: url(./images/flag_usa_enl.jpg);
 }
 
 .canada-flag {
-  background-image: url(../images/flag_canada_new.jpg);
+  background-image: url(./images/flag_canada_new.jpg);
 }
 
 .mexico-flag {
-  background-image: url(../images/flag_mexico_new.jpg);
+  background-image: url(./images/flag_mexico_new.jpg);
 }
 
 .france-flag {
-  background-image: url(../images/flag_france_new.jpg);
+  background-image: url(./images/flag_france_new.jpg);
 }

@@ -1,0 +1,56 @@
+h1 {
+  margin: 0;
+}
+
+h1:hover {
+  letter-spacing: 15px;
+  transform: scale(1.2);
+  transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.place {
+  font-family: "Source Serif Pro", serif;
+  display: flex;
+  font-size: 1.5em;
+  flex-direction: column;
+  text-align: center;
+}
+.place__title {
+  margin-top: 35px;
+  animation: falls 1s ease 0.3s;
+}
+.place__description {
+  margin-bottom: 20px;
+}
+.place__image {
+  margin: auto;
+  width: 80%;
+}
+.place__info {
+  display: block;
+  width: 80%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.image {
+  width: 100%;
+  height: 50%;
+}
+
+@keyframes falls {
+  0% {
+    opacity: 0;
+    top: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 100px;
+  }
+}
+
+/*# sourceMappingURL=places.css.map */
