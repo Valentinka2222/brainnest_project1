@@ -9,10 +9,10 @@ h1:hover {
 }
 
 .place {
-  font-family: 'Source Serif Pro', serif;
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: 'Source Serif Pro', serif;
 }
 
 .place__title {
@@ -40,7 +40,7 @@ h1:hover {
 
 .image {
   width: 100%;
-  height: 50%;
+  max-height: 450px;
 }
 
 @keyframes falls {
