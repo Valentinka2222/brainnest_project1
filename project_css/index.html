@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite places</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navigation">
+        <p class="header__title">Future cars</p>
+        <div class="header__logo"></div>
+        <ul class="header__navigation__list">
+          <li class="header__navigation__list_item">Price</li>
+          <li class="header__navigation__list_item">Contacs</li>
+          <li class="header__navigation__list_item">Cars reviews</li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <div class="header__content__left-side">
+          <span class="header__content__left-side_title">
+            The Hot New Cars of 2023-2024
+          </span>
+          <p class="header__content__left-side_description">
+            The most interesting new cars coming out over the next two years
+          </p>
+          <button class="btn">Sign up</button>
+        </div>
+        <div class="header__content__right-side">
+          <img
+            class="image"
+            src="./images/mustang.jpg"
+            alt="Mustang"
+            aria-placeholder="This is placeholder for an image"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="cards">
+        <span class="cards__title">Most anticipated cars</span>
+        <div class="cards__container">
+          <figure class="cards__container__card">
+            <img
+              class="image"
+              src="./images/2023_honda_civic-type-r_front.jpg"
+              alt="Honda"
+            />
+            <span class="cards__container__card_info">
+              Honda Civic Type R
+            </span>
+          </figure>
+          <figure class="cards__container__card">
+            <img
+              class="image"
+              src="./images/2024_rolls-royce_spectre.jpg"
+              alt="Rolls Royce"
+            />
+            <span class="cards__container__card_info">
+              Rolls-Royce Spectre
+            </span>
+          </figure>
+          <figure class="cards__container__card">
+            <img
+              class="image"
+              src="./images/2024_volkswagen_id-buzz_front.jpg"
+              alt="Volkswagen"
+            />
+            <span class="cards__container__card_info">
+              Volkswagen ID. Buzz
+            </span>
+          </figure>
+          <figure class="cards__container__card">
+            <img
+              class="image"
+              src="./images/dodge_charger-daytona-srt-concept_front.jpg"
+              alt="Dodge"
+            />
+            <span class="cards__container__card_info">
+              Dodge Charger Daytona SRT
+            </span>
+          </figure>
+        </div>
+      </section>
+      <section class="quotes">
+        <p class="quotes__content">
+          Automobiles have always been part of my life, and I’m sure they always
+          will be. What is it about them that moves me? The sound of a great
+          engine, the unity and uniqueness of an automobile’s engineering and
+          coachwork, the history of the company and the car, and, of course, the
+          sheer beauty of the thing.
+          <b class="quotes__author"> ― Edward Herrmann</b>
+        </p>
+      </section>
+      <section class="registration">
+        <div>
+          <h1>Call to action! It's time!</h1>
+          <p>
+            Sign up for our product by clicking that button right over there!
+          </p>
+        </div>
+        <button class="btn white">Sign up</button>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>Copyright </span>
+      <span>
+        <i class="fa-regular fa-copyright"></i>
+      </span>
+    </footer>
+  </body>
+</html>
