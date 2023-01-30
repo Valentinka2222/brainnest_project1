@@ -7,8 +7,14 @@
 .footer {
   background-color: #1f2937;
   color: #f9faf8;
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
   &__title {
     font-size: 24px;
+    margin-right: 10px;
   }
   &__navigation {
     display: flex;

@@ -9,9 +9,16 @@
   color: #f9faf8;
 }
 
+.header__logo,
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
 .header__title,
 .footer__title {
   font-size: 24px;
+  margin-right: 10px;
 }
 
 .header__navigation,
