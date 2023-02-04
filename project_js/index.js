@@ -64,32 +64,33 @@ const displayResults = (computerPoints, playerPoints) => {
 }
 
 const game = () => {
-  for (
-    let computerPoints = 0, playerPoints = 0;
-    playerPoints, computerPoints < 5;
+  if (choice.playerChoice.length !== 0)
+    for (
+      let computerPoints = 0, playerPoints = 0;
+      playerPoints, computerPoints < 5;
 
-  ) {
-    console.log(computerPoints, playerPoints)
-    choice.computerChoice = computerPlay()
+    ) {
+      console.log(computerPoints, playerPoints)
+      choice.computerChoice = computerPlay()
 
-    choice.playerChoice = prompt(
-      'Game:"Rock, Paper or Scissors". Please, enter your choice'
-    ).toLowerCase()
+      choice.playerChoice = prompt(
+        'Game:"Rock, Paper or Scissors". Please, enter your choice'
+      ).toLowerCase()
 
-    let res = playRound(choice.playerChoice, choice.computerChoice)
+      let res = playRound(choice.playerChoice, choice.computerChoice)
 
-    switch (res) {
-      case 'computer': {
-        computerPoints++
-        break
+      switch (res) {
+        case 'computer': {
+          computerPoints++
+          break
+        }
+        case 'player': {
+          playerPoints++
+          break
+        }
       }
-      case 'player': {
-        playerPoints++
-        break
-      }
+      displayResults(computerPoints, playerPoints)
     }
-    displayResults(computerPoints, playerPoints)
-  }
 }
 
 game()
