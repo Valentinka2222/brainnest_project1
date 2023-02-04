@@ -14,7 +14,8 @@ const computerPlay = () => {
   const min = 1
   const max = 3
 
-  const randonNumber = Math.floor(Math.random() * (max - min) + min)
+  const randonNumber = Math.floor(Math.random() * max + min)
+  console.log(randonNumber)
   switch (randonNumber) {
     case 1: {
       return 'rock'
@@ -65,6 +66,7 @@ const game = () => {
   ) {
     console.log(computerPoints, playerPoints)
     computerChoice = computerPlay()
+
     playerChoice = prompt(
       'Game:"Rock, Paper or Scissors". Please, enter your choice'
     ).toLowerCase()
