@@ -1,3 +1,6 @@
+import {points} from './units.js'
+import {spanComputerChoice} from './createElements.js'
+
 const showResults = (computerPoints, playerPoints) => {
   if (computerPoints == 5) {
     points.computerPoints = 0
