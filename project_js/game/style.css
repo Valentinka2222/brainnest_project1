@@ -58,6 +58,7 @@ body {
   border-radius: 15px;
 
   h1 {
+    display: block;
     width: 100%;
     color: white;
     font-size: 5em;
@@ -75,7 +76,9 @@ body {
     }
   }
 }
-
+.hidden {
+  display: none;
+}
 .scissors {
   background-image: url(./image/scissors_2.png);
 }
