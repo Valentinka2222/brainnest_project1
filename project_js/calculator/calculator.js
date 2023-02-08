@@ -1,117 +1,105 @@
 'use strict'
-let num = 0
-const createCalculator = () => {
-  num = 0
 
-  const reset = () => (num = 0)
-  switch (typeof function () {} === 'function') {
-    case add:
-      num = d
-      break
-    case decrease:
-      num = e
-      break
-    case reset:
-      num = 0
-      break
-    case getMemo:
-      if (num === d) {
-        return d
-      } else {
-        return e
-      }
-  }
+//Creating elements from document
+const currentNumber = document.querySelector('.currentNumb')
 
-  function add(addNum) {
-    num += addNum
-    addNum++
-    return num
-  }
+const previousNumber = document.querySelector('.previousNumb')
 
-  let d = add(5)
-  console.log(d)
+const mathSign = document.querySelector('.mathSign')
 
-  function decrease(decreaseNum) {
-    num -= decreaseNum
-    decreaseNum++
-    return num
-  }
-  function getMemo(value) {
-    value = num
-    return num
-  }
+const numbersButtons = document.querySelectorAll('.number')
 
-  let e = decrease(5)
-  console.log(e)
+const operatorsButtons = document.querySelectorAll('.operator')
 
-  return {getMemo, reset, e, d}
-}
-const calculator = createCalculator()
+const equalsButton = document.querySelector('.equals')
 
-export function add(addNum) {
-  num += addNum
-  addNum++
-  return num
-}
-export const reset = () => (num = 0)
+const clearButton = document.querySelector('.clear')
 
-export function getMemo(value) {
-  value = num
-  return num
-}
-export function decrease(decreaseNum) {
-  num -= decreaseNum
-  decreaseNum++
-  return num
-}
-/*
-export const createCalculator = () => {
-  let num = 0
-  function add(addNum) {
-    num += addNum
-    addNum++
-    return num
-  }
+let result = ''
 
-  let d = add(5)
-  console.log(d)
+function displayNumbers() {
+  //Adding maximum 1 comma at the display
+  if (this.textContent === '.' && currentNumber.textContent.includes('.'))
+    return
+  //Clicking comma first adding 0 on the beginning
+  if (this.textContent === '.' && currentNumber.textContent === '')
+    return (currentNumber.textContent = '0.')
 
-  function decrease(decreaseNum) {
-    num -= decreaseNum
-    decreaseNum++
-    return num
-  }
-  function getMemo(value) {
-    value = num
-    return num
-  }
-
-  let e = decrease(3)
-  console.log(e)
-
-  const reset = () => (num = 0)
-  switch (typeof function () {} === 'function') {
-    case add:
-      num = d
-      break
-    case decrease:
-      num = e
-      break
-    case reset:
-      num = 0
-      break
-    case getMemo:
-      if (num === d) {
-        return num
-      } else {
-        return num
-      }
-    default:
-      num = 0
-  }
-
-  return {getMemo, reset, decrease, add}
+  //displayNumbers
+  currentNumber.textContent += this.textContent
+  console.log(this.textContent)
 }
 
-const calculator1 = createCalculator()
-const calculator2 = createCalculator()*/
+const operate = (e) => {
+  console.log(e.target.dataset.id)
+  //Creating only 1 operator, making '-' a negative number
+  let curNumber = Number(currentNumber.textContent)
+  let prevNumber = Number(previousNumber.textContent)
+  let opr = mathSign.textContent
+  if (currentNumber.textContent === '' && this.textContent === '-') {
+    currentNumber.textContent = '-'
+    return
+  } else if (currentNumber.textContent === '') {
+    return
+  }
+
+  if (mathSign.textContent !== '') {
+    showResult(opr, curNumber, prevNumber)
+  }
+  previousNumber.textContent = currentNumber.textContent
+  mathSign.textContent = e.target.dataset.id
+  currentNumber.textContent = ''
+}
+const showResult = () => {
+  if (previousNumber.textContent === '' || currentNumber.textContent === '')
+    return
+
+  let x = Number(currentNumber.textContent)
+  let y = Number(previousNumber.textContent)
+  let opr = mathSign.textContent
+
+  switch (opr) {
+    case '+':
+      result = x + y
+      break
+    case '-':
+      result = y - x
+      break
+    case '×':
+      result = x * y
+      break
+    case '/':
+      result = y / x
+      break
+    case 'x^':
+      result = y ** x
+      break
+    case '%':
+      result = ((x / 100) * y).toFixed(2)
+      break
+  }
+
+  currentNumber.textContent = result
+  previousNumber.textContent = ''
+  mathSign.textContent = ''
+}
+
+const clearScreen = () => {
+  result = ''
+  currentNumber.textContent = ''
+  mathSign.textContent = ''
+  previousNumber.textContent = ''
+}
+
+//Setting click Eventlisteners
+operatorsButtons.forEach((button) =>
+  button.addEventListener('click', (e) => operate(e))
+)
+
+equalsButton.addEventListener('click', showResult)
+
+clearButton.addEventListener('click', clearScreen)
+
+numbersButtons.forEach((button) => {
+  button.addEventListener('click', displayNumbers)
+})

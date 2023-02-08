@@ -3,9 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Hello!</title>
   </head>
   <body>
-    <script src="calculator.js" type="module"></script>
+    <!--To view the history, default won't show this-->
+
+    <div id="root">
+      <div class="nothing"></div>
+      <div class="formula">
+        <p class="previousNumb"></p>
+        <span class="mathSign"></span>
+      </div>
+
+      <div class="display">
+        <div class="currentNumb">0</div>
+      </div>
+
+      <div class="btnsContainer">
+        <table class="btns">
+          <tr>
+            <td>
+              <button data-id="AC" class="cal-btns lightBlue operator">
+                AC
+              </button>
+            </td>
+            <td>
+              <button data-id="clear" class="cal-btns lightBlue clear">
+                C
+              </button>
+            </td>
+            <td>
+              <button data-id="x^" class="cal-btns lightBlue operator">
+                x^
+              </button>
+            </td>
+            <td>
+              <button data-id="/" class="cal-btns green operator">/</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button data-id="7" class="cal-btns dgray number">7</button>
+            </td>
+            <td>
+              <button data-id="8" class="cal-btns dgray number">8</button>
+            </td>
+            <td>
+              <button data-id="9" class="cal-btns dgray number">9</button>
+            </td>
+            <td>
+              <button data-id="×" class="cal-btns green operator">×</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button data-id="4" class="cal-btns dgray number">4</button>
+            </td>
+            <td>
+              <button data-id="5" class="cal-btns dgray number">5</button>
+            </td>
+            <td>
+              <button data-id="6" class="cal-btns dgray number">6</button>
+            </td>
+            <td>
+              <button data-id="-" class="cal-btns green operator">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button data-id="1" class="cal-btns dgray number">1</button>
+            </td>
+            <td>
+              <button data-id="2" class="cal-btns dgray number">2</button>
+            </td>
+            <td>
+              <button data-id="3" class="cal-btns dgray number">3</button>
+            </td>
+            <td>
+              <button data-id="+" class="cal-btns green operator">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button data-id="0" class="cal-btns dgray number">0</button>
+            </td>
+            <td>
+              <button data-id="." class="cal-btns dgray number">.</button>
+            </td>
+            <td>
+              <button data-id="%" class="cal-btns lightBlue operator">%</button>
+            </td>
+            <td>
+              <button data-id="equals" class="cal-btns green equals">=</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="./calculator.js" type="module"></script>
   </body>
 </html>
