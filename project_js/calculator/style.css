@@ -22,6 +22,11 @@ html {
   margin-bottom: 10px;
 }
 
+.display,
+.formula {
+  background-color: black;
+}
+
 .display {
   color: white;
   height: 75px;
@@ -110,6 +115,11 @@ html {
 }
 .currentNumb {
   font-size: 2.5em;
+  width: 100%;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: right;
 }
 
 #item-list {
