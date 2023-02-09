@@ -7,9 +7,8 @@ export const clearScreen = () => {
   element.mathSign.textContent = ''
   element.previousNumber.textContent = ''
 }
-export const clearCurrentNumber = () => {
-  element.currentNumber.textContent = element.currentNumber.textContent.slice(
+export const clearCurrentNumber = () =>
+  (element.currentNumber.textContent = element.currentNumber.textContent.slice(
     0,
     -1
-  )
-}
+  ))

@@ -2,17 +2,16 @@ import checkLength from './checkLength.js'
 import * as element from './units.js'
 
 const displayNumbers = (e) => {
-  if (
-    e.target.dataset.id === '.' &&
-    element.currentNumber.textContent.includes('.')
-  )
-    return
+  const id = e.target.dataset.id || e.key
+  let {currentNumber} = element
 
-  if (e.target.dataset.id === '.' && element.currentNumber.textContent === '')
-    return (element.currentNumber.textContent = '0.')
+  if (id === '.' && currentNumber.textContent.includes('.')) return
 
-  element.currentNumber.textContent += e.target.dataset.id
-  checkLength(element.currentNumber.textContent)
-  console.log(e.target.dataset.id)
+  if (id === '.' && currentNumber.textContent === '')
+    return (currentNumber.textContent = '0.')
+
+  currentNumber.textContent += id
+
+  checkLength(currentNumber.textContent)
 }
 export default displayNumbers

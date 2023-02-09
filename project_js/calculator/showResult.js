@@ -3,52 +3,51 @@ import {result} from './units.js'
 import checkLength from './checkLength.js'
 
 const showResult = (e) => {
+  let {previousNumber, currentNumber, mathSign} = element
+
   if (
-    (e.target.dataset.id === 'equals' &&
-      element.previousNumber.textContent === '') ||
-    element.currentNumber.textContent === ''
+    (e.target.dataset.id === 'equals' && previousNumber.textContent === '') ||
+    (e.key === '=' && previousNumber.textContent === '') ||
+    currentNumber.textContent === ''
   ) {
-    element.mathSign.textContent = 'error'
+    mathSign.textContent = 'error'
   }
-  if (
-    element.previousNumber.textContent === '' ||
-    element.currentNumber.textContent === ''
-  )
+  if (previousNumber.textContent === '' || currentNumber.textContent === '')
     return
 
-  let x = Number(element.currentNumber.textContent)
-  let y = Number(element.previousNumber.textContent)
-  let opr = element.mathSign.textContent
+  let a = Number(currentNumber.textContent)
+  let b = Number(previousNumber.textContent)
+  let opr = mathSign.textContent
 
   switch (opr) {
     case '+':
-      result.result = x + y
+      result.result = a + b
       break
     case '-':
-      result.result = y - x
+      result.result = b - a
       break
     case '*':
-      result.result = x * y
+      result.result = a * b
       break
     case '/':
-      if (x === 0) {
-        element.previousNumber.textContent = ''
-        element.mathSign.textContent = 'error'
+      if (a === 0) {
+        previousNumber.textContent = ''
+        mathSign.textContent = 'error'
         return
       }
-      result.result = y / x
+      result.result = b / a
       break
     case 'x^':
-      result.result = y ** x
+      result.result = b ** a
       break
     case '%':
-      result.result = ((x / 100) * y).toFixed(2)
+      result.result = ((a / 100) * b).toFixed(2)
       break
   }
-  console.log(Number(result.result).toFixed(2))
-  element.currentNumber.textContent = result.result
-  checkLength(element.currentNumber.textContent)
-  element.previousNumber.textContent = ''
-  element.mathSign.textContent = ''
+
+  currentNumber.textContent = result.result
+  checkLength(currentNumber.textContent)
+  previousNumber.textContent = ''
+  mathSign.textContent = ''
 }
 export default showResult
