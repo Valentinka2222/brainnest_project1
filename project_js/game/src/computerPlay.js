@@ -1,4 +1,5 @@
 'use strict'
+
 const computerPlay = () => {
   const nameOfChoice = ['rock', 'paper', 'scissors']
   const randonNumber = Math.floor(Math.random() * nameOfChoice.length)

@@ -1,4 +1,5 @@
 'use strict'
+
 import {points} from './units.js'
 
 export const divContainer = document.createElement('div')

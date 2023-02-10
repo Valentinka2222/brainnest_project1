@@ -29,6 +29,7 @@ export const keyPressEventHandler = (event) => {
       uniqueKey == '%'
     )
       operate(event)
+    else return
   }
 }
 

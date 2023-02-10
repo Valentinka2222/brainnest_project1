@@ -1,4 +1,5 @@
 'use strict'
+
 import {createElements} from './createElements.js'
 import {points, choice} from './units.js'
 import {
@@ -8,10 +9,14 @@ import {
 } from './createElements.js'
 import showResults from './showResults.js'
 import computerPlay from './computerPlay.js'
+import eventHandler from './eventHandler.js'
 
+// create DOM elements
 createElements()
 
+//
 const playRound = (e) => {
+  // hide results board  after finishing the game
   const h1Element = document.querySelector('h1')
   h1Element.classList.remove('hidden')
 
@@ -37,19 +42,10 @@ const playRound = (e) => {
     spanPlayerPoints.textContent = `Player ${points.playerPoints}`
     spanComputerPoints.textContent = `Computer ${points.computerPoints}`
   }
-
+  // visualization  computer choice
   spanComputerChoice.textContent = `Computer chose ${computerChoice}!`
   showResults(points.computerPoints, points.playerPoints)
 }
 
-const btns = Array.from(document.querySelectorAll('button'))
-
-btns.forEach((item) => {
-  item.addEventListener('click', function () {
-    btns.forEach((elem) => elem.classList.remove('red'))
-    item.classList.add('red')
-  })
-})
-btns.forEach((btn) => {
-  btn.addEventListener('click', playRound)
-})
+eventHandler(playRound)
+export default createElements

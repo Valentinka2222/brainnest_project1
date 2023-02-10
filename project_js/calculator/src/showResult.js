@@ -17,6 +17,7 @@ const showResult = (e) => {
 
   let a = Number(currentNumber.textContent)
   let b = Number(previousNumber.textContent)
+
   let opr = mathSign.textContent
 
   switch (opr) {
@@ -43,6 +44,8 @@ const showResult = (e) => {
     case '%':
       result.result = ((a / 100) * b).toFixed(2)
       break
+    default:
+      result.result = 'Entered operator'
   }
 
   currentNumber.textContent = result.result
