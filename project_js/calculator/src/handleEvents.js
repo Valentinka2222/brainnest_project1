@@ -28,4 +28,3 @@ const handleEvents = () => {
   document.addEventListener('keydown', (e) => keyDownEventHandler(e))
 }
 export default handleEvents
-72
