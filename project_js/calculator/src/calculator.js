@@ -21,5 +21,4 @@ const operate = (e) => {
 }
 
 handleEvents()
-
 export default operate

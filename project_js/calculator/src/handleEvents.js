@@ -22,7 +22,7 @@ const handleEvents = () => {
   element.numbersButtons.forEach((button) => {
     button.addEventListener('click', (e) => displayNumbers(e))
   })
-
+  // handler keyboard events
   document.addEventListener('keypress', (e) => keyPressEventHandler(e))
 
   document.addEventListener('keydown', (e) => keyDownEventHandler(e))

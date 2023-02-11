@@ -3,6 +3,7 @@ import {result} from './units.js'
 import checkLength from './checkLength.js'
 
 const showResult = (e) => {
+  // use Object destructuring to get elements
   let {previousNumber, currentNumber, mathSign} = element
 
   if (

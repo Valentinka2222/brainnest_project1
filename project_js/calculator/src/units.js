@@ -1,3 +1,5 @@
+// get DOM element by className
+
 export const currentNumber = document.querySelector('.currentNumb')
 
 export const previousNumber = document.querySelector('.previousNumb')
