@@ -24,8 +24,11 @@ const playRound = (e) => {
 
   playerChoice = e.target.dataset.item
   computerChoice = computerPlay()
+  spanComputerChoice.textContent = `Computer chose ${computerChoice}`
 
-  if (
+  if (playerChoice === computerChoice) {
+    spanComputerChoice.textContent = `Draw! Play again!`
+  } else if (
     (playerChoice === 'rock' && computerChoice === 'paper') ||
     (playerChoice === 'paper' && computerChoice === 'scissors') ||
     (playerChoice === 'scissors' && computerChoice === 'rock')
@@ -42,8 +45,7 @@ const playRound = (e) => {
     spanPlayerPoints.textContent = `Player ${points.playerPoints}`
     spanComputerPoints.textContent = `Computer ${points.computerPoints}`
   }
-  // visualization  computer choice
-  spanComputerChoice.textContent = `Computer chose ${computerChoice}!`
+
   showResults(points.computerPoints, points.playerPoints)
 }
 
